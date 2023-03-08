@@ -1,7 +1,9 @@
 pipeline {
-    node {
-        label 'maven'
-        customWorkspace '/home/nagarro/Desktop/workspace'
+    agent {
+    	node {
+        	label 'maven'
+        	customWorkspace '/home/nagarro/Desktop/workspace'
+    	}
     }
     stages {
         stage('One') {
