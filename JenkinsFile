@@ -1,5 +1,8 @@
 pipeline {
-    agent any
+    node {
+        label 'maven'
+        customWorkspace '/home/nagarro/Desktop/workspace'
+    }
     stages {
         stage('One') {
                 steps {
